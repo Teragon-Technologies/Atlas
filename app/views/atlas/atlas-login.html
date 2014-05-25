@@ -1,0 +1,37 @@
+    <article class="row admin-interface">
+
+      <!-- MODULE -->
+      <div class="small-12 medium-5 large-6 push-3 columns">
+        <div class="module">
+          <h2>Log In</h2>
+          <form class="module-form" id="loginForm">
+            <input type="text" name="username" placeholder="Enter Username">
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Submit" class="module-button text-center" />
+          </form>
+          <div id="errors"></div>
+        </div>
+      </div>
+      <!-- END MODULE -->
+
+
+      </div>
+    </article>
+
+    <script>
+    $('#loginForm').submit(function(e) {
+      var form = $('#loginForm').serializeArray()
+      e.preventDefault();
+
+      var submit = main.ajax('login', 'post', form);
+      submit.success(function(res) {
+        main.login(res.user);
+      }).error(function(res) {
+        var message = JSON.parse(res.responseText);
+        $('#errors').html(message.error);
+
+      });
+
+    });
+
+    </script>

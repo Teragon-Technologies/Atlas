@@ -1,0 +1,62 @@
+<article class="row admin-interface" ng-init="getAffiliates()">
+      <!-- STALE AFFILIATES MODULE -->
+          <div class="medium-12 large-12 columns">
+            <div class="module">
+
+              <h2>Manage Affiliates</h2>
+              <div class="row">
+                <div class="medium-12 large-12 columns">
+                  <a class="button">Filter Affiliates</a>
+                  <a class="button">View All</a> 
+                </div>
+              </div>
+
+              <!-- CRAIG, could we add a sort functionality such as http://tablesorter.com/docs/#Getting-Started -->
+              <table class="module-table">
+                <thead>
+                  <tr>
+                    <th class="">Affiliate</th>
+                    <th class="hide-for-small">City</th>
+                    <th class="hide-for-small">State</th>
+                    <th class="hide-for-small">MSA</th>
+                    <th class="hide-for-small">CSA</th>
+                    <th class="hide-for-small">Environment</th>
+                    <th class="hide-for-small">Age</th>
+                    <th class="hide-for-small">Cpacity</th>
+                    <th class="hide-for-small">Ad Views</th>
+                    <th class="" width="5%">View</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="store in stores">
+                    <td class="">{{store.name}}</td>
+                    <td class="hide-for-small">{{store.city}}</td>
+                    <td class="hide-for-small">{{store.state}}</td>
+                    <td class="hide-for-small"></td>
+                    <td class="hide-for-small"></td>
+                    <td class="hide-for-small"></td>
+                    <td class="hide-for-small"></td>
+                    <td class="hide-for-small"></td>
+                    <td class="hide-for-small"></td>
+                    <td class=""><a class="module-table-button" href="#/affiliate/{{store.id}}">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination">
+                <li class="arrow unavailable pagination-element"><a href="">&laquo;</a></li>
+                <li class="current pagination-element"><a href="">1</a></li>
+                <li class="pagination-element"><a href="">2</a></li>
+                <li class="pagination-element"><a href="">3</a></li>
+                <li class="pagination-element"><a href="">4</a></li>
+                <li class="unavailable pagination-element"><a href="">&hellip;</a></li>
+                <li class="pagination-element"><a href="">12</a></li>
+                <li class="pagination-element"><a href="">13</a></li>
+                <li class="arrow pagination-element"><a href="">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- END STALE AFFILIATES MODULE -->
+
+
+    </article>

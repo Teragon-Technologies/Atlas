@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Accounts</title>
+    <link rel="stylesheet" href="../../css/admin-styles.css" />
+    <script src="../../js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    
+    <!-- TOP BAR -->
+    <!-- GLOBAL NAV -->
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Manage Accounts - Wurst Bar</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider"></li>
+          <li><a href="">Notifacations</a></li>
+          <li class="divider"></li>
+          <li><a href="">Analytics</a></li>
+          <li class="divider"></li>
+          <li><a href="manage-accounts.html">Manage Accounts</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="">Help</a>
+            <ul class="dropdown">
+              <li><a href="#">Walkthroughs</a></li>
+              <li class="divider"></li>
+              <li><a href="#" data-reveal-id="requestHelpModal">Request Help</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li><a href="">Log Out</a></li>
+        </ul>
+      </section>
+    </nav>
+    <!-- END GLOBAL NAV -->
+    <!-- END TOP BAR -->
+
+    <article class="row admin-interface">
+      <div class="large-12 columns module">
+
+        <h2>User Accounts</h2>
+        <!-- Account List Table -->
+        <table class="module-table">
+          <thead>
+            <tr>
+              <th width="20%">User</th>
+              <th width="20%">Permissions</th>
+              <th width="20%">Username</th>
+              <th width="20%">Email</th>
+              <th width="20%">Last Log In</th>
+              <th>Edit</th>
+              <th>Delete</th>
+              
+            </tr> 
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chris</td>
+              <td>General Manager</td>
+              <td>ccollins</td>
+              <td>ccollins@thewurstbar.com</td>
+              <td>2 days ago</td>
+              <td><a href="#" data-reveal-id="editUserAccount">Edit</a></td>
+              <td><a href="#" data-reveal-id="deleteUserAccount">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Nick</td>
+              <td>Manager</td>
+              <td>nickyc</td>
+              <td>nick@thewurstbar.com</td>
+              <td>2 days ago</td>
+              <td><a href="#" data-reveal-id="editUserAccount">Edit</a></td>
+              <td><a href="#" data-reveal-id="deleteUserAccount">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Will</td>
+              <td>Staff</td>
+              <td>willieo</td>
+              <td>will@thewurstbar.com</td>
+              <td>2 days ago</td>
+              <td><a href="#" data-reveal-id="editUserAccount">Edit</a></td>
+              <td><a href="#" data-reveal-id="deleteUserAccount">Delete</a></td>
+            </tr>
+            
+          </tbody>
+
+        </table>
+        <a class="button" href="#" data-reveal-id="addUserAccount">Add User</a>
+        <!-- END Account List Table -->
+
+        <!-- Edit User Account Modal -->
+        <div id="editUserAccount" class="reveal-modal" data-reveal>
+          <h2>Edit User</h2>
+          <p class="lead">Chris Collins - <small>Manager</small></p>
+
+          <form class="module-form">
+            <div class="row">
+              <div class="large-6 columns">
+                <label for="username">Username
+                  <input type="text" name="username" placeholder="cacollins">
+                </label>
+                <label for="permissions">Permissions
+                  <select>
+                    <option>General Manager</option>
+                    <option>Manager</option>
+                    <option>Staff</option>
+                  </select>
+                </label>
+                <br>
+                <label for="user">Email
+                  <input type="email" name="email" placeholder="cacollins@wurstbar.com">
+                </label>
+                <a class="button" href="">Make Changes</a>
+                <a class="button" href="">Cancel</a>
+              </div>
+            </div>
+          </form>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <!-- END Edit User Account Modal -->
+
+        <!-- Delete User Account Modal -->
+        <div id="deleteUserAccount" class="reveal-modal" data-reveal>
+          <h2>Delete User</h2>
+          <p class="lead">Chris Collins - <small>Manager</small></p>
+          <p>You are about to Delete this user's account</p>
+          <a class="button alert" href="">Delete Account</a>
+          <a class="button" href="">Cancel</a>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <!-- END Delete User Account Modal -->
+
+        <!-- Add User Account Modal -->
+        <div id="addUserAccount" class="reveal-modal" data-reveal>
+          <h2>Add User</h2>
+          <form class="module-form">
+            <div class="row">
+              <div class="large-6 columns">
+                <label for="username">Username
+                  <input type="text" name="username" placeholder="enter username">
+                </label>
+                <label for="permissions">Permissions
+                  <select>
+                    <option>General Manager</option>
+                    <option>Manager</option>
+                    <option>Staff</option>
+                  </select>
+                </label>
+                <br>
+                <label for="user">Email
+                  <input type="email" name="email" placeholder="enter email">
+                </label>
+                <a class="button" href="">Add User</a>
+                <a class="button" href="">Cancel</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- END Add User Account Modal -->
+
+      </div>
+    </article>
+    
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

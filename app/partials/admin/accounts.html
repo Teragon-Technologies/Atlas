@@ -1,0 +1,107 @@
+<article class="row admin-interface" ng-init="init()">
+      <div class="large-12 columns module">
+
+        <h2>User Accounts</h2>
+        <!-- Account List Table -->
+        <table class="module-table">
+          <thead>
+            <tr>
+              <th width="20%">User</th>
+              <th width="20%">Permissions</th>
+              <th width="20%">Username</th>
+              <th width="20%">Email</th>
+              <th width="20%">Last Activity</th>
+              <th>Edit</th>
+              <th>Delete</th>
+              
+            </tr> 
+          </thead>
+          <tbody>
+            <tr ng-repeat="user in users">
+              <td>{{user.name}}</td>
+              <td>{{user.role.name}}</td>
+              <td>{{user.username}}</td>
+              <td>{{user.email}}</td>
+              <td>{{lastLoggedIn(user.updatedAt)}}</td>
+              <td><a data-reveal-id="editUserAccount" ng-click="setCurrent(user.id)">Edit</a></td>
+              <td><a data-reveal-id="deleteUserAccount" ng-click="setCurrent(user.id)">Delete</a></td>
+            </tr>            
+          </tbody>
+
+        </table>
+        <a class="button" data-reveal-id="addUserAccount">Add User</a>
+        <!-- END Account List Table -->
+
+        <!-- Edit User Account Modal -->
+        <div id="editUserAccount" class="reveal-modal" data-reveal>
+          <h2>Edit User</h2>
+          <p class="lead">{{current.name}} - <small>{{current.role.name}}</small></p>
+
+          <form class="module-form">
+            <div class="row">
+              <div class="large-6 columns">
+                <label for="username">User
+                  <input type="text" name="name" ng-model="current.name" value="{{current.name}}" />
+                </label>
+                <label for="username">Username
+                  <input type="text" name="username" ng-model="current.username" value="{{current.username}}" />
+                </label>
+                <label for="permissions">Permissions
+                  <select ng-model="current.role.id" ng-options="role.id as role.name for role in roles">
+                    <!--<option ng-repeat="role in roles" value="{{role.id}}">{{role.name}}</option>-->
+                  </select>
+                </label>
+                <br>
+                <label for="user">Email
+                  <input type="email" name="email" ng-model="current.email" value="{{current.email}}" />
+                </label>
+                <a class="button close-reveal-modal" ng-click="editUser(current)">Make Changes</a>
+                <a class="button close-reveal-modal">Cancel</a>
+              </div>
+            </div>
+          </form>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <!-- END Edit User Account Modal -->
+
+        <!-- Delete User Account Modal -->
+        <div id="deleteUserAccount" class="reveal-modal" data-reveal>
+          <h2>Delete User</h2>
+          <p class="lead">{{current.name}} - <small>{{current.role.name}}</small></p>
+          <p>You are about to Delete this user's account</p>
+          <a class="button alert close-reveal-modal" ng-click="delUser(current.id)">Delete Account</a>
+          <a class="button close-reveal-modal" href="">Cancel</a>
+        </div>
+        <!-- END Delete User Account Modal -->
+
+        <!-- Add User Account Modal -->
+        <div id="addUserAccount" class="reveal-modal" data-reveal>
+          <h2>Add User</h2>
+          <form class="module-form">
+            <div class="row">
+              <div class="large-6 columns">
+                <label for="username">User
+                  <input type="text" name="name" ng-model="user.name" placeholder="enter name" />
+                </label>
+                <label for="username">Username
+                  <input type="text" name="username" ng-model="user.username" placeholder="enter username">
+                </label>
+                <label for="permissions">Permissions
+                  <select ng-model="user.role" ng-options="role.id as role.name for role in roles">
+                    <!--<option ng-repeat="role in roles" value="{{role.id}}">{{role.name}}</option>-->
+                  </select>
+                </label>
+                <br>
+                <label for="user">Email
+                  <input type="email" name="email" ng-model="user.email" placeholder="enter email">
+                </label>
+                <a class="button close-reveal-modal" ng-click="addUser(user)" >Add User</a>
+                <a class="button close-reveal-modal" style="position: relative;">Cancel</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- END Add User Account Modal -->
+
+      </div>
+    </article>

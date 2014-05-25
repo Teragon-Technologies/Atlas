@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="Atlas">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Digital Menus</title>
+    <link rel="stylesheet" href="css/admin-styles.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    
+    <!-- TOP BAR -->
+    <navigation></navigation>
+    <!-- END TOP BAR -->
+    <div id="content" ng-view>
+
+    </div>
+    <script src="js/socket.io.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/directives/adminDirectives.js"></script>
+    <script src="js/controllers/adminControllers.js"></script>
+    <script src="js/services/adminServices.js"></script>
+    <script src="js/filters/filters.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

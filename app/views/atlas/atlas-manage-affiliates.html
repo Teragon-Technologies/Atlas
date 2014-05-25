@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Affiliates</title>
+    <link rel="stylesheet" href="../../css/admin-styles.css" />
+    <script src="../../js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    
+    <!-- TOP BAR -->
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="../dashboard.html">Manage Affiliates</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="#">Affiliates</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="create-new-affiliate.html">Create New Affiliate</a></li>
+              <li class="divider"></li>
+              <li><a href="manage-affiliates.html" class="active">Manage Affiliates</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="#">Item Managment</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="#">New Item Requests</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Manage Items</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="#">Advertisers</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="#">Create New Account</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Manage Accounts</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li><a href="#">Analytics</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="#">Help Requests</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="#">Affiliate Help Requests</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Advertiser Help Requests</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <!-- END TOP BAR -->
+
+    <article class="row admin-interface">
+      <!-- STALE AFFILIATES MODULE -->
+          <div class="medium-12 large-12 columns">
+            <div class="module">
+
+              <h2>Manage Affiliates</h2>
+              <div class="row">
+                <div class="medium-12 large-12 columns">
+                  <a class="button">Filter Affiliates</a>
+                  <a class="button">View All</a> 
+                </div>
+              </div>
+
+              <!-- CRAIG, could we add a sort functionality such as http://tablesorter.com/docs/#Getting-Started -->
+              <table class="module-table">
+                <thead>
+                  <tr>
+                    <th class="">Affiliate</th>
+                    <th class="hide-for-small">City</th>
+                    <th class="hide-for-small">State</th>
+                    <th class="hide-for-small">MSA</th>
+                    <th class="hide-for-small">CSA</th>
+                    <th class="hide-for-small">Environment</th>
+                    <th class="hide-for-small">Age</th>
+                    <th class="hide-for-small">Cpacity</th>
+                    <th class="hide-for-small">Ad Views</th>
+                    <th class="" width="5%">View</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="">Wurst Bar</td>
+                    <td class="hide-for-small">Ypsilanti</td>
+                    <td class="hide-for-small">MI</td>
+                    <td class="hide-for-small">Ann Arbor</td>
+                    <td class="hide-for-small">Detroit-Warren-Ann Arbor</td>
+                    <td class="hide-for-small">Casual</td>
+                    <td class="hide-for-small">25-34</td>
+                    <td class="hide-for-small">200</td>
+                    <td class="hide-for-small">18.7 p/w</td>
+                    <td class=""><a class="module-table-button" href="affiliate-accounts/affiliate-account.html">View</a></td>
+                  </tr>
+                  <tr>
+                    <td class="">The Gandy Dancer</td>
+                    <td class="hide-for-small">Ann Arbor</td>
+                    <td class="hide-for-small">MI</td>
+                    <td class="hide-for-small">Ann Arbor</td>
+                    <td class="hide-for-small">Detroit-Warren-Ann Arbor</td>
+                    <td class="hide-for-small">Upscale</td>
+                    <td class="hide-for-small">35-55</td>
+                    <td class="hide-for-small">300</td>
+                    <td class="hide-for-small">18.7 p/w</td>
+                    <td class=""><a class="module-table-button" href="affiliate-accounts/affiliate-account.html">View</a></td>
+                  </tr>
+                  <tr>
+                    <td class="">Ted's Chow'n'Plow Diner</td>
+                    <td class="hide-for-small">Detroit</td>
+                    <td class="hide-for-small">MI</td>
+                    <td class="hide-for-small">Ann Arbor</td>
+                    <td class="hide-for-small">Detroit-Warren-Ann Arbor</td>
+                    <td class="hide-for-small">Upscale</td>
+                    <td class="hide-for-small">35-55</td>
+                    <td class="hide-for-small">300</td>
+                    <td class="hide-for-small">18.7 p/w</td>
+                    <td class=""><a class="module-table-button" href="affiliate-accounts/affiliate-account.html">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination">
+                <li class="arrow unavailable pagination-element"><a href="">&laquo;</a></li>
+                <li class="current pagination-element"><a href="">1</a></li>
+                <li class="pagination-element"><a href="">2</a></li>
+                <li class="pagination-element"><a href="">3</a></li>
+                <li class="pagination-element"><a href="">4</a></li>
+                <li class="unavailable pagination-element"><a href="">&hellip;</a></li>
+                <li class="pagination-element"><a href="">12</a></li>
+                <li class="pagination-element"><a href="">13</a></li>
+                <li class="arrow pagination-element"><a href="">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- END STALE AFFILIATES MODULE -->
+
+
+    </article>
+
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

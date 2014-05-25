@@ -1,0 +1,20 @@
+<article class="row admin-interface">
+
+      <!-- MODULE -->
+      <div class="small-12 medium-5 large-6 push-3 columns">
+        <div class="module">
+          <h2>Log In</h2>
+          <form class="module-form" id="loginForm">
+            <input type="text" name="username" placeholder="Enter Username" ng-model="user.username">
+            <input type="password" name="password" placeholder="Enter Password" ng-model="user.password">
+            <button class="module-button text-center" ng-click="login(user)">Submit</button>
+            
+          </form>
+          <div id="errors">{{error}}</div>
+        </div>
+      </div>
+      <!-- END MODULE -->
+
+
+      </div>
+</article>

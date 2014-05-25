@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Affiliate</title>
+    <link rel="stylesheet" href="../../css/admin-styles.css" />
+    <script src="../../js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    
+    <!-- TOP BAR -->
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="../dashboard.html">Create New Affiliate</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="#">Affiliates</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="#">Create New Affiliate</a></li>
+              <li class="divider"></li>
+              <li><a href="manage-affiliates.html">Manage Affiliates</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="#">Item Managment</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="#">New Item Requests</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Manage Items</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="#">Advertisers</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="#">Create New Account</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Manage Accounts</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li><a href="#">Analytics</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="#">Help Requests</a>
+            <ul class="dropdown">
+              <li class="divider"></li>
+              <li><a href="#">Affiliate Help Requests</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Advertiser Help Requests</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <!-- END TOP BAR -->
+
+    <article class="row admin-interface">
+      <!-- STALE AFFILIATES MODULE -->
+          <div class="medium-6 large-6 push-3 columns">
+            <div class="module">
+
+              <h2>Create New Affiliate</h2>
+              <form class="module-form">
+                <fieldset>
+                  <legend>Affiliate Information</legend>
+                  <label for="affiliate-name">Establishment Name</label><input type="text" name="affiliate-name" />
+                  <label for="affiliate-street">Street</label><input type="text" name="affiliate-street" />
+                  <label for="affiliate-city">City</label><input type="text" name="affiliate-city" />
+                  <label for="affiliate-state">State</label><input type="text" name="affiliate-state" />
+                  <label for="affiliate-zip">Zip Code</label><input type="number" name="affiliate-zip" />
+                  <label for="affiliate-primary-contact">Primary Contact</label><input type="tel" name="affiliate-primary-contact" />
+                  <label for="affiliate-primary-telephone">Primary Telephone</label><input type="tel" name="affiliate-primary-telephone" />
+                  <label for="affiliate-primary-email">Primary Email</label><input type="email" name="affiliate-primary-email" />
+                  <label for="affiliate-secondary-contact">Secondary Contact</label><input type="tel" name="affiliate-secondary-contact" />
+                  <label for="affiliate-secondary-telephone">Secondary Telephone</label><input type="tel" name="affiliate-Secondary-telephone" />
+                  <label for="affiliate-secondary-email">Secondary Email</label><input type="email" name="affiliate-emergency-email" />
+                  <label for="affiliate-website-address">Website</label><input type="email" name="affiliate-website-address" />
+                  <label for="affiliate-tablet-type">Tablet Type</label><input type="number" name="affiliate-tablet-type" />
+                  <label for="affiliate-tablet-count">Tablet Count</label><input type="number" name="affiliate-tablet-count" />
+                  <label for="affiliate-contract-start-date">Contract Start Date</label><input type="date" name="affiliate-contract-start-date" />
+                  <label for="affiliate-contract-end-date">Contract End Date</label><input type="date" name="affiliate-contract-end-date" />
+                  <label for="affiliate-corporation-name">Corporation Name</label><input type="date" name="affiliate-corporation-name" />
+                  <label for="affiliate-corporation-street">Corporation Street</label><input type="date" name="affiliate-corporation-street" />
+                  <label for="affiliate-corporation-city">Corporation City</label><input type="text" name="affiliate-corporation-city" />
+                  <label for="affiliate-corporation-state">Corporation State</label><input type="text" name="affiliate-corporation-state" />
+                  <label for="affiliate-corporation-zip">Corporation Zip Code</label><input type="number" name="affiliate-corporation-zip" />
+                  <label for="affiliate-corporation-contact">Corporation Contact</label><input type="text" name="affiliate-corporation-contact" />
+                  <label for="affiliate-corporation-email">Corporation Email</label><input type="email" name="affiliate-corporation-email" />
+                  <label for="affiliate-corporation-phone">Corporation Phone</label><input type="tel" name="affiliate-corporation-phone" />
+                  <a class="button" name="submit-new-affiliate-form">Create New Affiliate</a>
+                </fieldset>
+              </form>
+             
+            </div>
+          </div>
+          <!-- END STALE AFFILIATES MODULE -->
+
+
+    </article>
+    
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

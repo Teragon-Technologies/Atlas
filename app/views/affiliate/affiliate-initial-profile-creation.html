@@ -1,0 +1,392 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Creation</title>
+    <link rel="stylesheet" href="../../css/admin-styles.css" />
+    <script src="../../js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    
+    <!-- TOP BAR -->
+    <!-- GLOBAL NAV -->
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Profile Creation</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider"></li>
+          <li><a href="">Notifacations</a></li>
+          <li class="divider"></li>
+          <li><a href="">Analytics</a></li>
+          <li class="divider"></li>
+          <li><a href="">Manage Accounts</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="">Help</a>
+            <ul class="dropdown">
+              <li><a href="#">Walkthroughs</a></li>
+              <li class="divider"></li>
+              <li><a href="#" data-reveal-id="requestHelpModal">Request Help</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li><a href="">Log Out</a></li>
+        </ul>
+      </section>
+    </nav>
+    <!-- END GLOBAL NAV -->
+    <!-- END TOP BAR -->
+
+    <article class="row admin-interface">
+
+      <!-- MODULE -->
+      <div class="small-12 medium-12 large-12 columns">
+        <h2>Profile Creation</h2>
+        <p>We need you to provide some basic information about your establishment so that we can provide the best experience for your users.</p>
+        <p>Please provide us with the following information.</p>
+        <div class="module">
+          <h2>Establishment Profile</h2>
+
+          <form class="module-form row">
+            <div class="large-612 columns">
+              <label><span class="form-number">1</span> Your Total Seating Capacity         
+                <input type="number" placeholder="ex: 248">
+              </label>
+            </div>
+
+            <div class="large-12 columns">
+              <label><span class="form-number">2</span> Primary Age Group of Patrons        
+                <select>
+                  <option selected disabled>Choose Age Group</option>
+                  <option>21 - 24</option>
+                  <option>25 - 34</option>
+                  <option>35 - 54</option>
+                  <option>55+</option>
+                </select>
+              </label>
+              <br>
+            </div>
+
+            <div class="large-12 columns">
+              <label><span class="form-number text-center">3</span> Year Established
+                <input type="date" placeholder="ex: 2007">
+              </label>
+            </div>
+
+            <div class="large-12 columns">
+              <label><span class="form-number">4</span> Hours of Operation</label>
+            </div>
+
+            <div class="large-12 columns">
+              <table class="module-table">
+                <thead>
+                  <tr>
+                    <th width="20%">Opening Time</th>
+                    <th width="40%">Duration</th>
+                    <th width="40%">Hours of Operation</th>
+                  </tr>
+                </thead>
+
+                <!-- Monday Hours -->
+                <thead>
+                  <tr>
+                    <th colspan="3">Mondays</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>   
+                    <td>
+                      <input class="text-center"type="datetime-local" name="hoursOfOperation" value="" id="monOpen" placeholder="24:00">
+                    </td>
+                    <td>
+                      <input type="range" min="1" max="24" step=".5" name="hoursOfOperation" value="10" id="monDuration">
+                    </td> 
+                    <td>
+                      <div>Open: Mon 9:00 AM, Close: Tue 2:00 AM</div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <!-- Tuesdays Hours -->
+                <thead>
+                  <tr>
+                    <th colspan="3">Tuesdays</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>   
+                    <td>
+                      <input class="text-center"type="datetime-local" name="hoursOfOperation" value="" id="monOpen" placeholder="24:00">
+                    </td>
+                    <td>
+                      <input type="range" min="1" max="24" step=".5" name="hoursOfOperation" value="10" id="monDuration">
+                    </td> 
+                    <td>
+                      <div>Open: Mon 9:00 AM, Close: Tue 2:00 AM</div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <!-- Wednesdays Hours -->
+                <thead>
+                  <tr>
+                    <th colspan="3">Wednesdays</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>   
+                    <td>
+                      <input class="text-center"type="datetime-local" name="hoursOfOperation" value="" id="monOpen" placeholder="24:00">
+                    </td>
+                    <td>
+                      <input type="range" min="1" max="24" step=".5" name="hoursOfOperation" value="10" id="monDuration">
+                    </td> 
+                    <td>
+                      <div>Open: Mon 9:00 AM, Close: Tue 2:00 AM</div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <!-- Thursdays Hours -->
+                <thead>
+                  <tr>
+                    <th colspan="3">Thursdays</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>   
+                    <td>
+                      <input class="text-center"type="datetime-local" name="hoursOfOperation" value="" id="monOpen" placeholder="24:00">
+                    </td>
+                    <td>
+                      <input type="range" min="1" max="24" step=".5" name="hoursOfOperation" value="10" id="monDuration">
+                    </td> 
+                    <td>
+                      <div>Open: Mon 9:00 AM, Close: Tue 2:00 AM</div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <!-- Fridays Hours -->
+                <thead>
+                  <tr>
+                    <th colspan="3">Fridays</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>   
+                    <td>
+                      <input class="text-center"type="datetime-local" name="hoursOfOperation" value="" id="monOpen" placeholder="24:00">
+                    </td>
+                    <td>
+                      <input type="range" min="1" max="24" step=".5" name="hoursOfOperation" value="10" id="monDuration">
+                    </td> 
+                    <td>
+                      <div>Open: Mon 9:00 AM, Close: Tue 2:00 AM</div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <!-- Saturdays Hours -->
+                <thead>
+                  <tr>
+                    <th colspan="3">Saturdays</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>   
+                    <td>
+                      <input class="text-center"type="datetime-local" name="hoursOfOperation" value="" id="monOpen" placeholder="24:00">
+                    </td>
+                    <td>
+                      <input type="range" min="1" max="24" step=".5" name="hoursOfOperation" value="10" id="monDuration">
+                    </td> 
+                    <td>
+                      <div>Open: Mon 9:00 AM, Close: Tue 2:00 AM</div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <!-- Sundays Hours -->
+                <thead>
+                  <tr>
+                    <th colspan="3">Sundays</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>   
+                    <td>
+                      <input class="text-center"type="datetime-local" name="hoursOfOperation" value="" id="monOpen" placeholder="24:00">
+                    </td>
+                    <td>
+                      <input type="range" min="1" max="24" step=".5" name="hoursOfOperation" value="10" id="monDuration">
+                    </td> 
+                    <td>
+                      <div>Open: Mon 9:00 AM, Close: Tue 2:00 AM</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="large-12 columns">
+              <label><span class="form-number">5</span> Select the option that best describes your establishment</label>
+            </div>
+            <div class="large-12 columns">
+              <table class="module-table">
+                <thead>
+                  <tr>
+                    <th width="50%"><input type="radio" name="enviroment" value="Casual" id="enviromentCasual"><label for="enviromentCasual">Casual</label></th>
+                    <th width="50%"><input type="radio" name="enviroment" value="Upscale" id="enviromentUpscale"><label for="enviromentUpscale">Upscale</label></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Full-service establishment with a moderately priced menu, minimal dress code, and a relaxed atmosphere.</td>
+                    <td>Full service establishment with a higher-priced menu, and where formal dress attire is appropriate in an upscale setting.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="radio" name="enviroment" value="Nightclub" id="enviromentNightclub"><label for="enviromentNightclub">Nightclub</label></th>
+                    <th><input type="radio" name="enviroment" value="Hotel" id="enviromentHotel"><label for="enviromentHotel">Hotel</label></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A nightclub is an entertainment venue distinguished from bars by the inclusion of a dance floor and a DJ booth, where a DJ plays recorded forms of dance music.</td>
+                    <td>Any bar-restaurant located within a lodging establishment.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="radio" name="enviroment" value="Private Club" id="enviromentPrivateClub"><label for="enviromentPrivateClub">Private Club</label></th>
+                    <th><input type="radio" name="enviroment" value="Banquet Hall" id="enviromentBanquetHall"><label for="enviromentBanquetHall">Banquet Hall</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A members-only establishment, such as a country club or yacht club.</td>
+                    <td>An establishment that hosts large scale events and is not generally open without reservation.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="large-12 columns">
+              <label><span class="form-number">6</span> Select any special charicteristics that apply to your establishment.</label>
+            </div>
+            <div class="large-12 columns">
+              <table class="module-table">
+                <thead>
+                  <tr>
+                    <th width="50%"><input type="checkbox" name="characteristics" value="College Bar" id="characteristicsCollege"><label for="characteristicsCollege">College Bar</label></th>
+                    <th width="50%"><input type="checkbox" name="characteristics" value="Upscale" id="characteristicsSports"><label for="characteristicsSports">Sports Bar</label></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>An establishment located within close proximity to a college that is frequented by college staff or students.</td>
+                    <td>An establishment that primaraly broadcasts sporting events and includes sports themed decor.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="characteristics" value="Nightclub" id="characteristicsArtisinalCocktails"><label for="characteristicsArtisinalCocktails">Artisinal Cocktails</label></th>
+                    <th><input type="checkbox" name="characteristics" value="Hotel" id="characteristicsGastropub"><label for="characteristicsGastropub">Gastropub</label></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>An establishment that has made a special effort to create unique and/or exotic cocktails with barteneders trained in mixology.</td>
+                    <td>An establishment that caters primarily to "foodies" (food connoisseurs) and serves high-end food or drinks that are not necessarily targeted at the fine dining crowd.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="characteristics" value="Private Club" id="characteristicsBrewpubMicrobrewery"><label for="characteristicsBrewpubMicrobrewery">Brewpub/Microbrewery</label></th>
+                    <th><input type="checkbox" name="characteristics" value="Banquet Hall" id="characteristicsMeaderyWinery"><label for="characteristicsMeaderyWinery">Meadery/Winery</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>An establishment that brews its own beer for sale on its premises.</td>
+                    <td>An establishment that produces its own mead or wine for sale on its premises.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="characteristics" value="Private Club" id="characteristicsMicrodistillery"><label for="characteristicsMicrodistillery">Microdistillery</label></th>
+                    <th><input type="checkbox" name="characteristics" value="Banquet Hall" id="characteristicsBbq"><label for="characteristicsBbq">BBQ</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>An establishment that distills its own spirits for sales on its own premises.</td>
+                    <td>An establishment that has a special focus on BBQ food.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="characteristics" value="Private Club" id="characteristicsSushi"><label for="characteristicsSushi">Sushi</label></th>
+                    <th><input type="checkbox" name="characteristics" value="Banquet Hall" id="characteristicsSteakhouse"><label for="characteristicsSteakhouse">Steakhouse</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>An establishment that has a special focus on sushi.</td>
+                    <td>An establishment that has a special focus on steak.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="characteristics" value="Private Club" id="characteristicsTapas"><label for="characteristicsTapas">Tapas</label></th>
+                    <th><input type="checkbox" name="characteristics" value="Banquet Hall" id="characteristicsVegan"><label for="characteristicsVeganVegitarian">Vegan/Vegitarian</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>An establishment that primarily offers menu items in a tapas format.</td>
+                    <td>An establishement that has a menu specifically catering to vegans and/or vegitarians.</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="characteristics" value="Banquet Hall" id="characteristicsGlutenfree"><label for="characteristicsGlutenfree">Gluten-free</label></th>
+                    <th><input type="checkbox" name="characteristics" value="Private Club" id="characteristicsLiveMusicDj"><label for="characteristicsLiveMusicDj">Live Music or DJ</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>An establishement that has a menu specifically focused on gluten-free dishes.</td>
+                    <td>An establishment that offers live music (or DJ) as a major component of their atmosphere.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="large-6 pull-3 columns">
+              <a class="module-button text-center" href="dashboard.html">Submit</a>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+      <!-- END MODULE -->
+
+    </article>
+    
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
